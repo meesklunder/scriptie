@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Inleiding</title>
+
+        <!-- Add bootstrap first, then own stylesheet-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="kleurtjens.css" rel="stylesheet" />
+
+        <script>
+            function getVote(int) {
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function() {
+                if (this.readyState==4 && this.status==200) {
+                document.getElementById("poll").innerHTML=this.responseText;}
+                }
+            xmlhttp.open("GET","poll_vote.html?vote="+int,true);
+            xmlhttp.send();
+            }
+        </script>
+    </head>
+
+    <body style="background-color: rgb(163, 202, 243); margin-top:20px;">
+        <div class="row"> 
+
+            <!-- Voetnoten-->
+            <div class="col-md-3">
+            <div data-mdb-sticky-position="top">
+                <br><br><br>
+                <p class="voetnoot">
+                    <sup>[1]</sup> Dit wordt via sociale campagnes en corporate funding gedaan; een van de meest succesvolle campagnes was de popularisatie van de term carbon footprint door oliebedrijf BP in 2004. Solnit, R. (2021c, August 27). <i>Big oil coined ‘carbon footprints’ to blame us for their greed. Keep them on the hook.</i> The Guardian. Retrieved May 31, 2023, from <a class="extern" href = "https://www.theguardian.com/commentisfree/2021/aug/23/big-oil-coined-carbon-footprints-to-blame-us-for-their-greed-keep-them-on-the-hook">https://www.theguardian.com/commentisfree/2021/aug/23/big-oil-coined-carbon-footprints-to-blame-us-for-their-greed-keep-them-on-the-hook</a> 
+                    <br>
+                </p>
+                <p class= "voetnoot">
+                    <sup>[2]</sup> Het IPCC stelt: “The term climate justice, while used in different ways in different contexts by different communities, generally includes three principles: distributive justice which refers to the allocation of burdens and benefits among individuals, nations and generations; procedural justice which refers to who decides and participates in decision-making; and recognition which entails basic respect and robust engagement with and fair consideration of diverse cultures and perspectives.” (<a class="extern"href="https://www.ipcc.ch/report/ar6/wg2/">IPCC</a>, 2022). Deze drie principes laten zien dat in verschillende landen een totaal andere aanpak nodig is voor het omgaan met de klimaatcrisis, omdat deze aanpak afhankelijk is van de geschiedenis, socio-culturele situatie, en economische situatie van het land.
+                    <br>
+                </p>
+            </div>
+            </div>
+
+            <!-- Main text-->
+            <div class="col-md-6", style="background-color: white;">
+            <div class="main_text">
+                <h3>Inleiding</h3>
+                <p>Wetende dat we ons in een klimaatcrisis bevinden; bent U bang voor de toekomst?</p>
+                <div id="poll">
+                    <form>
+                        Ja: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+                        Nee: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+                    </form>
+                </div>
+                <br>
+
+                <p>
+                De afgelopen decennia is er een groeiende aandacht voor het onderwerp klimaatpsychologie. Klimaatangst en rouw om ecologische verliezen zijn veelonderzochte fenomenen, en worden ervaren door mensen over de hele wereld (<a class="extern" href=https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-012220-022716>Ojala et al.</a>, 2022). Deze collectieve emoties worden deels veroorzaakt en versterkt door verschillende normatieve narratieven rondom klimaatverandering in westerse samenlevingen. Een invloedrijk narratief is dat van de ‘klimaatramp’ of apocalyps. In dit narratief wordt de klimaatcrisis gezien als een wereldramp, waarvan de mens de aanstichter en dus de ‘boosdoener’ is, en zijn we op een punt beland dat de negatieve gevolgen niet meer terug te draaien zijn, en alles alleen nog maar erger zal worden. Dit narratief is in de westerse wetenschap, literatuur, politiek en media alom aanwezig (<a class="extern" href=https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcc.606?casa_token=vCFM69BTrIIAAAAA:Hk-g_n7k69Z7wlqIkDYL8WfQ9b_NntKXr0JUAQHO-OQgx22BHAmq_QsIQ6A2xG02qTTIpqrigYKWZnv65w>Moser</a>, 2020); alhoewel eerst gedacht werd dat dit narratief een motiverend effect zou kunnen hebben op burgers en beleidsmakers, wordt dit steeds meer betwijfeld (<a class="extern" href="http://www.jstor.org/stable/43496858">Fiskio</a>, 2012).                 
+                </p>
+
+                <p>
+                Een ander narratief in het dominante westerse discours is dat van persoonlijke verantwoordelijkheid, gebaseerd op het neoliberale idee van een autonoom, rationeel individu (<a class="extern" href=https://www.nature.com/articles/s41599-022-01111-w>Toivonen</a>, 2022). Waar olie- en gasbedrijven kortgeleden nog een focus hadden op het aanwakkeren van klimaatontkenning (<a class="extern" href="https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s10584-013-1018-7&casa_token=6q2V_iIm2KoAAAAA:GZKn7AYfZhd4agU4qhK-jLTaveNDrcfEW8PlUGlt9ke_V_OaDGK94GlkKCE5Deh4uXl3YtT15YtHNGdFkEk">Brulle</a>, 2014; <a class="extern" href=https://www.pnas.org/doi/abs/10.1073/pnas.1509433112>Farrell</a>, 2016; <a class="extern" href=https://books.google.nl/books/about/Merchants_of_Doubt.html?id=ZeFcCAAAQBAJ&redir_esc=y>Oreskes en Conway</a>, 2011, zoals gerefereerd in <a class="extern" href=https://academic.oup.com/socpro/advance-article-abstract/doi/10.1093/socpro/spac032/6602058>Malin</a>, 2022), zien we dat dezelfde bedrijven zich nu richten op het idee dat ieder individu in de westerse samenleving verantwoordelijk is voor zijn eigen uitstoot, en dat individuen dus als eerste hun eigen koopgedrag moeten aanpassen om klimaatverandering te kunnen stoppen<sup>1</sup>. Paradoxaal genoeg heeft deze focus op persoonlijke verantwoordelijkheid juist een averechts effect op het collectieve gevoel van <i><a href="agency.html">agency</a></i> in westerse landen (<a class="extern" href=https://www.nature.com/articles/s41599-022-01111-w>Toivonen</a>, 2022). Alhoewel een individu keuzevrijheid heeft in wat die consumeert, betekent deze status als consument ook dat het individu nooit een perfecte keuze kan maken, gezien vrijwel iedere vorm van consumptie wel op een manier gezien kan worden als niet verantwoord. Er bestaat dus geen ‘goede’ keuze.
+                </p>
+                
+                <p>
+                Gevoelens van angst en klimaatdepressie gaan hand in hand met gevoelens van machteloosheid, en resulteren bij veel mensen in een cognitieve dissonantie tussen de kennis van het klimaatprobleem, en onze dagelijkse realiteit (<a class="extern" href=https://majorprojects.planningportal.nsw.gov.au/prweb/PRRestService/mp/01/getContent?AttachRef=EXH-2026%2120190808T023049.125%20GMT>Leahy et al.</a>, 2010; <a class="extern" href=https://books.google.com/books?hl=nl&lr=&id=nM_xCwAAQBAJ&oi=fnd&pg=PP1&dq=Norgaard,+K.+M.+(2011).+Living+in+Denial+(1st+edition).+&ots=OlA5_fByUZ&sig=3Jt-A9AUVf7guBwQP60one-F0Y4>Norgaard</a>, 2011). Daarnaast is het internet - voor veel mensen een dagelijkse nieuwsbron - een mijnenveld geworden van misinformatie; algoritmische bubbels creëren een echokamer waarin gepolariseerde standpunten het gesprek over klimaatverandering aanwakkeren tot een vijandig discours dat vaak weinig meer met klimaatwetenschap te maken heeft (<a class="extern" href="https://www.tandfonline.com/doi/abs/10.1080/17524032.2018.1527378?casa_token=HhJ2BamFzHoAAAAA:kOHG_hGtSi6mz1p82mvaU-PX_iDgXhqiUAscULfs0OSwGphdBzlmEpvtKLzXKgOQFJgMwz5AyInEN1g">Bloomfield & Tillery</a>, 2019; <a class="extern"href=https://doi.org/10.1093/biosci/bix133 >Harvey et al.</a>, 2018; <a class="extern" href=https://doi.org/10.1002/biot.200700163 >Minol et al.</a>, 2007; <a class="extern" href=https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcc.191?casa_token=j7xMwIkr8XwAAAAA:1GzbWnsY85sFYximJ-zTPM2c-8PdODbGcMUTpvtIKpk5L2dr_ldG22pNpSlp9uqE6PLNy9-IDxVSczBlCg>Schäfer</a>, 2012; <a class="extern" href=https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcc.665>Treen et al.</a>, 2020; <a class="extern" href=https://link.springer.com/chapter/10.1007/978-94-007-2085-5_14>Trench</a>, 2012, zoals gerefereerd in <a class="extern" href=https://www.heiditoivonen.com/research/2021/10/climate-fiction-the-literary-genre-to-save-the-planet/>Toivonen</a>, 2021). Deze wijdverspreide cognitieve dissonantie resulteert in het slakkentempo waarop beleidsmakers, bedrijven en individuen zich in hun keuzes beginnen te richten op het afweren van de gevolgen van deze crisis. Vanuit een perspectief van klimaatrechtvaardigheid<sup>2</sup>, zijn het echter juist deze multinationals en de overheden van de rijkste westerse landen die (economische) verantwoordelijkheid zouden moeten nemen (<a class="extern" href=https://www.ipcc.ch/report/ar6/wg2/>IPCC</a>, 2022).                 
+                </p>
+
+                <p>
+                Het is duidelijk dat de klimaatcrisis niet te vatten is vanuit één oogpunt of discipline. Morton noemt in zijn boek <i><a class="extern" href=https://books.google.com/books?hl=nl&lr=&id=qu5zDwAAQBAJ&oi=fnd&pg=PT9&dq=Morton,+T.+(2013).+Hyperobjects:+Philosophy+and+Ecology+After+the+End+of+the+World.+Posthumanities.&ots=mbceCFvLiU&sig=3irAH3zam_jGuMGBbCFr0lMWCzs>Hyperobjects</a></i> (2013) de opwarming van de aarde een <i>hyperobject</i>; een object dat, alhoewel het zich in de fysieke realiteit bevindt, zo complex is dat het door de mens, binnen de menselijke schaal van ruimtetijd, niet begrepen kan worden. Een mens kan enkel kleine, gelokaliseerde delen van het hyperobject tegelijk ‘zien’ (<a class="extern" href=https://books.google.com/books?hl=nl&lr=&id=qu5zDwAAQBAJ&oi=fnd&pg=PT9&dq=Morton,+T.+(2013).+Hyperobjects:+Philosophy+and+Ecology+After+the+End+of+the+World.+Posthumanities.&ots=mbceCFvLiU&sig=3irAH3zam_jGuMGBbCFr0lMWCzs>Morton</a>, 2023; p. 4). Het is onmogelijk een ‘cynische afstand’ te behouden wanneer men geconfronteerd wordt met een hyperobject, stelt Morton (p. 24). Morton benoemt kort in de introductie van zijn boek dat de denk- en schrijfstijl die hyperobjecten afdwingen gebaseerd moet zijn op het omkeren of het doen verdwijnen van zekerheden (p. 5), waarmee hij tot op zekere hoogte in de traditie van het postmodernisme staat. Hij gaat echter verder niet in op de mogelijkheid die bepaalde types van schrijven kunnen bieden om de klimaatcrisis als hyperobject te denken.                 
+                </p>
+
+                <p>
+                Dit is waar ik in deze scriptie dieper op in wil gaan. Tot in hoeverre kunnen we via schrijven de <i><a href="agency.html">agency</a></i> hervatten die in het westerse denkkader, dat de klimaatcrisis als een paradox van persoonlijke verantwoordelijkheid en tegelijk een onomkeerbare natuurramp positioneert, verloren is gegaan? Ik wil hierbij focussen op vormen van schrijven die kunnen worden gezien als een voortzetting van <i>l’écriture féminine</i>, ofwel het vrouwelijk schrijven, van <a href="cixous.html">Hélène Cixous</a> (<a class="extern" href="https://www.academia.edu/30461229/CIXOUS_Helene_The_Laugh_of_the_Medusa">1976</a>). Vrouwelijk schrijven, volgens <a href="cixous.html">Cixous</a>, heeft het vermogen om los te breken uit masculiene structuren van onderdrukking, en bestaande dichotomieën die worden geassocieerd met de verhouding tussen man en vrouw (ratio-intuïtie, licht-donker, leidend-volgend) te ontkrachten. De praktijk van het vrouwelijk schrijven vormt dus een methode van verzet tegen moderne westerse denkkaders, en is ook op andere vormen van schrijven toe te passen, zoals queer, zwart en <a href="inheems.html">inheems schrijven</a>, en de schrijfvorm <a href="hypertext.html">hypertext</a>. Ik ga dieper in op <a href="inheems.html">inheems schrijven</a> als casus, gezien dit een schrijfvorm is die veel in verband wordt gebracht met de klimaatcrisis, in de zoektocht naar oplossingen daarvoor. Als methode voor mijn scriptie gebruik ik zelf <a href="hypertext.html">hypertext</a>. Ik verdiep mijn analyse van <a href="hypertext.html">hypertext</a> met behulp van de Cyborg van <a href="cyborg.html">Donna Haraway</a> (<a class="extern" href=https://archive.org/details/simianscyborgswo0000hara>1991</a>), een baanbrekend concept dat de synthese van mens en technologie centraal zet om de grenzen van het westerse denken te weerleggen. <a href="hypertext.html">Hypertext</a>, een schrijfvorm gebaseerd op de vooruitgang van westerse technologische ontwikkeling, lijkt lijnrecht tegenover <a href="inheems.html">inheems schrijven</a> als methode te staan. Echter plaats ik juist deze twee methoden naast elkaar, in het kader van <a href="cixous.html">Cixous</a>, om te laten zien hoe deze oppositie het resultaat is van discursieve tegenstellingen die juist door beide schrijfvormen ontkracht worden. Gezien ik beargumenteer dat schrijven een vorm van <i><a href="agency.html">agency</a></i> is die we nodig hebben in de klimaatcrisis, behoeft die term, ‘<i><a href="agency.html">agency</a></i>’, een nadere analyse. Dit doe ik met behulp van de tekst van <a class="extern" href=https://www.jstor.org/stable/23164525?casa_token=tCDaVGJ2BPAAAAAA%3AnaqnlD0TScSvFa1mvnZiDEyTSs-q29KUVGRbExwJJnRy9Rdi3S2eRxZX9u6O884K7cakVCuun6HOXwV2bX_UIPZa9fGGXrjRYoU32UlBAOYrQaVa1f3AMw>Bronwyn Davies</a> (1991), die <i><a href="agency.html">agency</a></i> uiteenzet vanuit een feministisch poststructuralistisch uitgangspunt, en hierin voortbouwt op <a href="cixous.html">Cixous</a>’ <i>écriture féminine</i>.                 
+                </p>  
+                
+                <p> 
+                    De scriptie als geheel dient twee verschillende, maar samenhangende doelen. Ten eerste: het uiteenzetten van een netwerk aan literatuur die de mogelijkheid van schrijven als vorm van <i><a href="agency.html">agency</a></i> bespreekt. De centrale vraag daarin luidt: 
+                        <blockquote>
+                        <i>Tot in hoeverre zijn Cyborg van <a href="hypertext.html">hypertext</a> als schrijfvorm, gezien vanuit het kader van de <a href="cyborg.html">Donna Haraway</a>, en <a href="inheems.html">inheems schrijven</a>, beide voortzettingen van écriture féminine van <a href="cixous.html">Hélène Cixous</a>, verenigbaar als vormen van schrijven als verzet, die <i><a href="agency.html">agency</a></i> kunnen verschaffen in het licht van de klimaatcrisis?</i>                     
+                        </blockquote>
+                    Ten tweede fungeert de scriptie zelf als experiment: kan schrijven, zoals ik in verschillende onderdelen zal beargumenteren, inderdaad <i><a href="agency.html">agency</a></i> verschaffen aan zowel de schrijver als de lezer? Deze vraag kan ik op basis van literatuur niet beantwoorden, en zullen we samen, als participanten aan de tekst, moeten onderzoeken. De hoofdstukken waaruit deze scriptie bestaat, zijn allemaal gelinkt in de bovenstaande tekst. Verder is er een samenvattende <a href="conclusie.html">conclusie</a>, waarmee je kunt eindigen, of beginnen, als je dat wilt.                  
+                </p>
+            </div>
+            </div>
+            
+            <!-- Comments-->
+            <div class="col-md-3">
+                <p>
+                <div class="comment">
+                    <?html 
+                        $filename = 'inleiding';
+                        include 'show_comments.html';
+                    ?>
+                </div>
+                </p>
+
+                <p>
+                <?html 
+                    $filename = 'inleiding';
+                    include 'commentbox.html'; 
+                ?>
+                </p>
+           </div>
+        </div>    
+    <br>
+
+    <ul>
+        <li class="button_right">
+            <a href="conclusie.html">Conclusie</a>
+        </li>
+        <li class="button_left">
+            <a href="inhoud.html">Inhoud</a>
+        </li>
+    </ul>
+
+</body>
+</html> 

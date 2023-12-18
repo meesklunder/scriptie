@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Inhoud</title>
+
+    <!-- Add bootstrap first, then own stylesheet-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="kleurtjens.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: rgb(163, 202, 243); margin-top:20px;">
+        <div class="row"> 
+
+            <!-- Voetnoten-->
+            <div class="col-md-3">
+                <!-- <br><br><br>
+                <p class="voetnoot">
+                    <sup>[1]</sup> HTML, de primaire programmeertaal die gebruikt wordt voor het maken van websites, staat voor HyperText Markup Language. De taal is gemaakt voor het organiseren van grote hoeveelheden data, en het mogelijk maken te navigeren in deze data via links.
+                    <br>
+                </p>
+                <p class= "voetnoot">
+                    <sup>[2]</sup> Het ontstaan van hypertext wordt toegeschreven aan de schrijver Jorge Luis Borges, die in zijn korte verhaal ‘The Garden of Forking Paths’ het verhaal van de hoofdpersoon schrijft als een labyrinth wat steeds weer op zichzelf terugkomt, en daardoor tot in het oneindige doorgaat (Murray, p. 3, 2003).
+                    <br>
+                </p> -->
+            </div>
+
+            <!-- Main text-->
+            <div class="col-md-6", style="background-color: white;">
+            <div class="main_text">
+            <h3>Inhoud</h3>
+                <p>
+                    <a href="index.html">Voorwoord</a>
+                    <br>
+                    <a href="inleiding.html">Inleiding</a>
+                    <br>
+                    <a href="cixous.html">Helene Cixous; <i>l'écriture féminine</i></a>
+                    <br>
+                    <a href="inheems.html"> Inheems schrijven</a>
+                    <br>
+                    <a href="cyborg.html">Donna Haraway; <i>a Cyborg Manifesto</i></a>
+                    <br>
+                    <a href="hypertext.html">Hypertext; schrijver en lezer als cyborg</a>
+                    <br>
+                    <a href="agency.html"><i>Agency</i></a>
+                    <br>
+                    <a href="conclusie.html">Conclusie</a>
+                    <br>
+                    <a href="bronnen.html">Literatuurlijst</a>
+                </p>
+            </div>
+            </div>
+            
+            <!-- Comments-->
+            <div class="col-md-3">
+                <!-- <p>
+                <div class="comment">
+                    <?html 
+                        $filename = 'index';
+                        include 'show_comments.html';
+                    ?>
+                </div>
+                </p>
+
+                <p>
+                <?html 
+                    $filename = 'index';
+                    include 'commentbox.html'; 
+                ?>
+                </p> -->
+           </div>
+        </div>       
+    <br>
+
+    <ul>
+        <li class="button_left">
+            <?html
+                $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+                echo "<a href='$url'>Terug</a>";       
+            ?>
+        </li>
+        <li class="button_right">
+            <a href="inhoud.html">Inhoud</a>
+        </li>
+    </ul>
+
+</body>
+</html>
